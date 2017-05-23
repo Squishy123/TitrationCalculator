@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Titration Calculator</title>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Titration Calculator</h1><br>
+        <form>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>HCl</th>
+                        <th>NaOH</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Concentration</th>
+                        <th>
+                            <div class="form-group">
+                                <textarea disabled rows="1" cols="20" class="form-control" id="result">[unknown]</textarea>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Concentration" id="concentrationNaOH">
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Volume</th>
+                        <th>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Volume" id="volumeHCl">
+                            </div>
+                        </th>
+                        <th>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Initial Volume" id="volumeInitialNaOH">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Final Volume" id="volumeFinalNaOH">
+                            </div>
+                            <div class="form-group">
+                                <textarea disabled rows="1" cols="20" class="form-control" id="volumeNaOH">Volume of NaOH</textarea>
+                            </div>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="form-group">
+                <input type="button" class="btn btn-info" value="Calculate" id="button">
+            </div>
+        </form>
+        <!--
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Number 1" id="num1">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Operation" id="op">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Number 2" id="num2">
+            </div>
+            <div class="form-group">
+                <input type="button" class="btn btn-info" value="=" id="button">
+            </div>
+            <div class="form-group">
+                <textarea rows="1" cols="20" class="form-control" id="output">Answer</textarea>
+            </div>
+        </form>
+        -->
+    </div>
+
+    <!--<script type="application/dart" src="js/app.dart"></script>-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
