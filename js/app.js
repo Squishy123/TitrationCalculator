@@ -6676,13 +6676,13 @@
       volumeHCl = H.Primitives_parseDouble(H.interceptedTypeCast(t1.querySelector("#volumeHCl"), "$isInputElement").value, null);
       volumeInitialNaOH = H.Primitives_parseDouble(H.interceptedTypeCast(t1.querySelector("#volumeInitialNaOH"), "$isInputElement").value, null);
       volumeNaOH = J.$sub$n(H.Primitives_parseDouble(H.interceptedTypeCast(t1.querySelector("#volumeFinalNaOH"), "$isInputElement").value, null), volumeInitialNaOH);
-      t1.querySelector("#volumeNaOH").textContent = H.S(volumeNaOH);
+      t1.querySelector("#volumeNaOH").textContent = H.S(volumeNaOH) + "L";
       moleNaOH = J.$mul$ns(volumeNaOH, concentrationNaOH);
       if (typeof moleNaOH !== "number")
         return moleNaOH.$div();
       if (typeof volumeHCl !== "number")
         return H.iae(volumeHCl);
-      t1.querySelector("#result").textContent = H.S(moleNaOH / volumeHCl);
+      t1.querySelector("#result").textContent = H.S(moleNaOH / volumeHCl) + "M";
     }, "call$1", "app__getCalculation$closure", 2, 0, 12],
     main: [function() {
       var t1 = J.get$onClick$x(document.querySelector("#button"));

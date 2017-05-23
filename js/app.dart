@@ -19,14 +19,14 @@ void getCalculation(MouseEvent event) {
 
   //Calculate the volume of NaOH
   double volumeNaOH = volumeFinalNaOH - volumeInitialNaOH;
-  querySelector("#volumeNaOH").text = "$volumeNaOH".toString();
+  querySelector("#volumeNaOH").text = "$volumeNaOH".toString() + "L";
 
   //Calculate the mole of NaOH
   double moleNaOH = volumeNaOH * concentrationNaOH;
 
   //Calculate the concentration of HCl
   double concentrationHCl = moleNaOH / volumeHCl;
-  querySelector("#result").text = "$concentrationHCl".toString();
+  querySelector("#result").text = "$concentrationHCl".toString() + "M";
 }
 
 //Main Method
